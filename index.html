@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BookShelf App</title>
+        <link rel="stylesheet" href="assets/fontawesome-free-5.15.3-web/css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1><i class="fas fa-bookmark"></i>BookShelf App</h1>
+            <form id="search-book">
+                <input type="text" class="search-book" id="search-string" placeholder="Cari judul buku...">
+                <i class="fas fa-search"></i>
+            </form>
+        </header>
+
+        <div class="bg-pattern"></div>
+
+        <div class="contents">
+
+            <div class="content-child" id="input-book">
+                <div class="content-title">
+                    <h1>Masukkan buku baru</h1>
+                </div>
+                <form id="input-new-book">
+                    <label for="judul">Judul</label>
+                    <input type="text" name="judul" id="title-input" required>
+                    <label for="penulis">Penulis</label>
+                    <input type="text" name="penulis" id="author-input" required>
+                    <label for="tahun">Tahun</label>
+                    <input type="number" name="tahun" id="year-input" required>
+                    <span>
+                        <label for="input-selesai">Selesai dibaca :</label>
+                        <input type="checkbox" id="is-completed">
+                    </span>
+                    <button type="submit" id="input-submit"><i class="fas fa-arrow-circle-down"></i> Masukkan buku ke rak</button>
+                </form>
+            </div>
+
+            <div class="content-child">
+                <div class="content-title">
+                    <h1>Belum selesai dibaca</h1>
+                </div>
+                <div class="book-list" id="uncompleted-books">
+
+                </div>
+            </div>
+
+            <div class="content-child">
+                <div class="content-title">
+                    <h1>Selesai dibaca</h1>
+                </div>
+                <div class="book-list" id="completed-books">
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer><p>Dicoding Front-End Web Course Exam Submission by Nuzul Hikam.</p></footer>
+        <script src="js/script.js" type="text/javascript"></script>
+    </body>
+</html>
