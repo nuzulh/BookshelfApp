@@ -1,2 +1,3 @@
 # BookshelfApp
-Submitted for Dicoding Basic Frontend Course Exam Submission.
+
+deployed at: https://bacabuku.netlify.app/
